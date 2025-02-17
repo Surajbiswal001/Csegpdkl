@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2a2a2a;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-logo {
+            flex: 1;
+            text-align: left;
+            color: #fff;
+        }
+
+        .footer-logo h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ff9b2e;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .footer-links {
+            flex: 2;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ff9b2e;
+        }
+
+        .footer-social-icons {
+            flex: 1;
+            text-align: right;
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-social-icons a {
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-social-icons a:hover {
+            color: #ff9b2e;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .footer-bottom a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-social-icons {
+                justify-content: center;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Our College Website</h1>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Footer Logo and Info -->
+            <div class="footer-logo">
+                <h2>XYZ College</h2>
+                <p>Your path to a brighter future starts here.</p>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <a href="#">Admissions</a>
+                <a href="#">Departments</a>
+                <a href="#">Academics</a>
+                <a href="#">Library</a>
+                <a href="#">Campus Life</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social-icons">
+                <a href="#" target="_blank">&#xf09a;</a> <!-- Facebook icon -->
+                <a href="#" target="_blank">&#xf099;</a> <!-- Twitter icon -->
+                <a href="#" target="_blank">&#xf16d;</a> <!-- Instagram icon -->
+                <a href="#" target="_blank">&#xf0d2;</a> <!-- LinkedIn icon -->
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section (Copyright and Legal) -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 XYZ College. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

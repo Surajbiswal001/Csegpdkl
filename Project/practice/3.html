@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <style>
+        /* Reset and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .student-activity {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #3498db, #9b59b6);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            width: 100%;
+        }
+
+
+
+        .student-activity p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Container for activities */
+        .activities-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        /* Individual activity styling */
+        .activity {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            width: 300px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .activity:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+        }
+
+        .activity h3 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .activity p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .activity a {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff4b5c, #ff9b2e);
+            color: #fff;
+            padding: 14px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .activity a:hover {
+            background: linear-gradient(135deg, #ff9b2e, #ff4b5c);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="student-activity">
+        <div class="activities-container">
+            <!-- Check Results Activity -->
+            <div class="activity">
+                <h3>Check Results</h3>
+                <p>View your academic results for the latest semester.</p>
+                <a href="check-results.html">View Results</a>
+            </div>
+
+            <!-- Biometrics Activity -->
+            <div class="activity">
+                <h3>Biometrics</h3>
+                <p>Access your biometric data for verification purposes.</p>
+                <a href="biometrics.html">View Biometrics</a>
+            </div>
+
+            <!-- Download Notes Activity -->
+            <div class="activity">
+                <h3>Download Notes</h3>
+                <p>Download study materials and notes for your courses.</p>
+                <a href="download-notes.html">Download Notes</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
